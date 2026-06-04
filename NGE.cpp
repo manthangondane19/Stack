@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #include<stack>
 #include<vector>
-
+using namespace std;
 
 vector<int> ngeLtoR(vector<int>s){
     stack<int> st;
