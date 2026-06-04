@@ -8,7 +8,7 @@ vector<int> dailytemp(vector<int>s){
     vector<int>ans(n);
 
     st.push(0);
-    for(int i=1;i<8;i++){
+    for(int i=1;i<n;i++){
         while(!st.empty()&&s[st.top()]<s[i]){
             int idx=st.top();
             st.pop();
