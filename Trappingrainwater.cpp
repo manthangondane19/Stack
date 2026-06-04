@@ -7,7 +7,7 @@ int trapping(vector<int>s){
     int n=s.size();
 
     //left max
-    vector<int>lefmax(n);
+    vector<int>leftmax(n);
     leftmax[0]=s[0];
     
     for(int i=1;i<n;i++){
