@@ -11,7 +11,7 @@ void trapping(vector<int>s){
     leftmax[0]=s[0];
     
     for(int i=1;i<n;i++){
-        leftmax[i]=max(leftmax[i-1],s[i]);
+        leftmax[i]=max(leftmax[i-1],s[i]); //prefix max
     }
     
     //rightmax
@@ -20,7 +20,7 @@ void trapping(vector<int>s){
     rightmax[n-1]=s[n-1];
     
     for(int i=n-2;i>=0;i--){
-        rightmax[i]=max(rightmax[i+1],s[i]);
+        rightmax[i]=max(rightmax[i+1],s[i]); //suffix max
     }
 
     //accumalation of ans
