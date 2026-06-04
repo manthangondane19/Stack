@@ -57,7 +57,7 @@ int histogram(vector<int> s)
         st.push(i);
     }
 
-    int maxArea = 0;
+  
 
     // Calculate maximum area
     for(int i = 0; i < n; i++){
