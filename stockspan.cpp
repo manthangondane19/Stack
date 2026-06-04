@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 #include<stack>
 #include<vector>
-
+using namespace std;
 vector<int> stockspan(vector<int>s){ 
      stack<int> st;
      int n=s.size();
