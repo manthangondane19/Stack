@@ -7,10 +7,10 @@ vector<int> nge_circular(vector<int>s){
      int n=s.size();
     vector<int>ans(n);
 
-   for(int i = 2*n-1; i >= 0; i--) // i=2n-1 to 0 
+   for(int i = 2*n-1; i >= 0; i--) //since we have to circle back to the start of the array to find nge of last array element we'll use i%n i from 2n-1 to 0 there we will encounter the same index twice ince i<n i%n==i
     {
         
-        while(!st.empty() && s[st.top()] <= s[i%5])
+        while(!st.empty() && s[st.top()] <= s[i%n])
         {
             st.pop();
         }
