@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-void trapping(vector<int>s){
+int trapping(vector<int>s){
     int n=s.size();
 
     //left max
